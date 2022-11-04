@@ -1,0 +1,29 @@
+.app__content__profile__info {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.app__content__profile__info img {
+    width: 100px;
+    height: 100px;
+}
+.profile__info__content {
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+
+    font-family: "Microsoft Sans Serif";
+    font-size: 20px;
+
+}
+.profile__info__content h4 {
+    font-size: 30px;
+    margin: 0 0 5px 0;
+    padding: 0;
+
+}
+.profile__info__content span {
+    margin-top: 5px;
+
+}

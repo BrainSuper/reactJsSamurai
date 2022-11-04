@@ -15,7 +15,7 @@ function App() {
                 <div className='content__wrapper'>
                     <Routes>
                         <Route path={'/profile'} element={<Profile/>}/>
-                        <Route path={'/dialogs'} element={<Dialogs/>}/>
+                        <Route exact path={'/dialogs'} element={<Dialogs/>}/>
                     </Routes>
 
                     {/*<Profile/>*/}
