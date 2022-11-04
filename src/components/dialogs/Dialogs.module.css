@@ -1,3 +1,7 @@
+h1 {
+    margin: 0;
+    padding: 0;
+}
 .dialogs__wrapper {
     display: flex;
     justify-content: flex-start;
@@ -11,7 +15,6 @@
     border-right: 1px solid lightgreen;
 
 }
-
 
 
 .dialogs__messages {

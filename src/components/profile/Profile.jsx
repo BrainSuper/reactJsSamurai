@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './Profile.module.css'
 import MyPosts from "./myPosts/MyPosts";
 import ProfileInfo from "./profileInfo/ProfileInfo";
-const Profile = () => {
+const Profile = ({postData}) => {
     return (
         <div>
             <div className={classes.app__content__img}>
@@ -14,7 +14,7 @@ const Profile = () => {
                 <input type="text" placeholder='your news'/>
                 <button>Send</button>
             </form>
-        <MyPosts/>
+        <MyPosts postData={postData}/>
         </div>
     );
 };
