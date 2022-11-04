@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './Profile.module.css'
+import MyPosts from "./myPosts/MyPosts";
 const Profile = () => {
     return (
         <div className={classes.app__content}>
@@ -23,12 +24,7 @@ const Profile = () => {
                 <input type="text" placeholder='your news'/>
                 <button>Send</button>
             </form>
-            <div className={classes.app__posts}>
-                <div className={classes.app__post}>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThLP6xJXBY_W2tT5waakogfnpHk4uhpVTy7A&usqp=CAU" alt="postlogo"/>
-                    <div className={classes.app__post__descr}>Something post here</div>
-                </div>
-            </div>
+        <MyPosts/>
         </div>
     );
 };

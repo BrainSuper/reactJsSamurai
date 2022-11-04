@@ -1,0 +1,15 @@
+.app__post {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+.app__post img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.app__post__descr {
+    font-family: "Microsoft Sans Serif";
+    font-size: 20px;
+}
