@@ -1,0 +1,17 @@
+.app__nav {
+    grid-area: n;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.app__nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Microsoft Sans Serif";
+    color: black;
+    margin-top: 5px;
+}
+.app__nav a:last-child {
+    margin-top: 20px;
+}
