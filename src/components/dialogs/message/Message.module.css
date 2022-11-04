@@ -1,0 +1,17 @@
+.dialogs__message {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dialogs__message img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.message {
+    color: black;
+    font-size: 20px;
+    font-family: "Microsoft Sans Serif";
+}
