@@ -1,0 +1,52 @@
+.dialogs__wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dialogs__names {
+    margin-top: 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid lightgreen;
+
+}
+
+.dialogs__name {
+    margin-bottom: 30px;
+    font-family: "Microsoft Sans Serif";
+
+}
+
+.dialogs__name a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.dialogs__name a:hover {
+    color: lightgreen;
+}
+
+.dialogs__messages {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.dialogs__message {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dialogs__message img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.message {
+    color: black;
+    font-size: 20px;
+    font-family: "Microsoft Sans Serif";
+}

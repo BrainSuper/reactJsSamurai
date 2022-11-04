@@ -3,7 +3,7 @@ import classes from './Profile.module.css'
 import MyPosts from "./myPosts/MyPosts";
 const Profile = () => {
     return (
-        <div className={classes.app__content}>
+        <div>
             <div className={classes.app__content__img}>
                 <img src="https://static-cse.canva.com/blob/572643/2.Freephotos.jpg" alt="bg"/>
             </div>

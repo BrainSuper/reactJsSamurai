@@ -10,5 +10,6 @@
   grid-gap: 10px;
 }
 
-
-
+.content__wrapper {
+  grid-area: c;
+}
