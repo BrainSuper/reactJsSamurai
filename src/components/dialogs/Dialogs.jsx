@@ -1,10 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import classes from './Dialogs.module.css'
 import Message from "./message/Message";
 import Dialog from "./dialog/Dialog";
 
-const Dialogs = ({dialogsPage}) => {
-
+const Dialogs = ({dialogsPage, addMessage, messageChange}) => {
 
     return (
         <>
@@ -15,6 +14,13 @@ const Dialogs = ({dialogsPage}) => {
                 </div>
                 <div className={classes.dialogs__messages}>
                     {dialogsPage.messageData.map(message => <Message message={message.message}/>)}
+                    <form className={classes.post__form} onSubmit={(e) => {
+                        e.preventDefault();
+                        addMessage();
+                    }}>
+                        <input type="text" value={dialogsPage.newMessage} onChange={e => messageChange(e.target.value)} placeholder='your message'/>
+                        <button>Send</button>
+                    </form>
                 </div>
             </div>
         </>

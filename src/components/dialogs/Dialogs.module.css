@@ -21,4 +21,32 @@ h1 {
     margin-left: 20px;
     margin-top: 20px;
 }
+.post__form {
+    display: flex;
+    flex-direction: column;
+    font-family: "Microsoft Sans Serif";
+    align-items: flex-start;
+
+}
+.post__form input {
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 2px;
+    outline: none;
+    background-color: aliceblue;
+    opacity: 0.2;
+    height: 50px;
+}
+.post__form button {
+    align-self: flex-end;
+    width: 80px;
+    height: 20px;
+    text-align: left;
+    background-color: lightgreen;
+    margin-right: 9.5%;
+    margin-top: 5px;
+    border: none;
+
+}
+
 
