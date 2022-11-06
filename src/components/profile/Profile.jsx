@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import classes from './Profile.module.css'
 import MyPosts from "./myPosts/MyPosts";
 import ProfileInfo from "./profileInfo/ProfileInfo";
-import {addPostAC, postChangeAC} from "../../redux/store";
+import {addPostAC, postChangeAC} from "../../redux/profileReducer";
 const Profile = ({profilePage, dispatch}) => {
     return (
         <div>

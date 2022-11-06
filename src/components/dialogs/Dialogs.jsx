@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import classes from './Dialogs.module.css'
 import Message from "./message/Message";
 import Dialog from "./dialog/Dialog";
-import {addMessageAC, messageChange} from "../../redux/store";
+import {addMessageAC, messageChange} from "../../redux/dialogsReducer";
 
 const Dialogs = ({dialogsPage, dispatch}) => {
 
