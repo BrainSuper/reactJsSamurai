@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import classes from './Profile.module.css'
 import MyPosts from "./myPosts/MyPosts";
 import ProfileInfo from "./profileInfo/ProfileInfo";
-const Profile = ({profilePage, addPost, postChange}) => {
-    console.log(profilePage, postChange, addPost);
+import {addPostAC, postChangeAC} from "../../redux/store";
+const Profile = ({profilePage, dispatch}) => {
     return (
         <div>
             <div className={classes.app__content__img}>
@@ -12,10 +12,10 @@ const Profile = ({profilePage, addPost, postChange}) => {
             <ProfileInfo/>
             <form onSubmit={(e) => {
                 e.preventDefault();
-                addPost()
+                dispatch(addPostAC());
             }} className={classes.post__form}>
                 <h4>My posts</h4>
-                <input type="text" value={profilePage.newPostText} onChange={(e) => postChange(e.target.value)} placeholder='your news'/>
+                <input type="text" value={profilePage.newPostText} onChange={(e) => dispatch(postChangeAC(e.target.value))} placeholder='your news'/>
                 <button>Send</button>
             </form>
         <MyPosts postData={profilePage.postData}/>

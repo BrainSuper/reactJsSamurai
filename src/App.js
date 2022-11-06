@@ -6,7 +6,7 @@ import Profile from "./components/profile/Profile";
 import Dialogs from "./components/dialogs/Dialogs";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-function App({store}) {
+function App({store, dispatch}) {
     return (
         <BrowserRouter>
             <div className="app__wrapper">
@@ -14,8 +14,8 @@ function App({store}) {
                 <Navbar/>
                 <div className='content__wrapper'>
                     <Routes>
-                        <Route path={'/profile'} element={<Profile postChange={store.postChange.bind(store)} addPost={store.addPost.bind(store)} profilePage={store.getState().profilePage}/>}/>
-                        <Route exact path={'/dialogs'} element={<Dialogs messageChange={store.messageChange.bind(store)} addMessage={store.addMessage.bind(store)} dialogsPage={store.getState().dialogsPage}/>}/>
+                        <Route path={'/profile'} element={<Profile dispatch={dispatch} profilePage={store.getState().profilePage}/>}/>
+                        <Route exact path={'/dialogs'} element={<Dialogs dispatch={dispatch} dialogsPage={store.getState().dialogsPage}/>}/>
                     </Routes>
 
                     {/*<Profile/>*/}

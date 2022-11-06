@@ -2,8 +2,9 @@ import React, {useState} from 'react';
 import classes from './Dialogs.module.css'
 import Message from "./message/Message";
 import Dialog from "./dialog/Dialog";
+import {addMessageAC, messageChange} from "../../redux/store";
 
-const Dialogs = ({dialogsPage, addMessage, messageChange}) => {
+const Dialogs = ({dialogsPage, dispatch}) => {
 
     return (
         <>
@@ -16,9 +17,9 @@ const Dialogs = ({dialogsPage, addMessage, messageChange}) => {
                     {dialogsPage.messageData.map(message => <Message message={message.message}/>)}
                     <form className={classes.post__form} onSubmit={(e) => {
                         e.preventDefault();
-                        addMessage();
+                        dispatch(addMessageAC());
                     }}>
-                        <input type="text" value={dialogsPage.newMessage} onChange={e => messageChange(e.target.value)} placeholder='your message'/>
+                        <input type="text" value={dialogsPage.newMessage} onChange={e => dispatch(messageChange(e.target.value))} placeholder='your message'/>
                         <button>Send</button>
                     </form>
                 </div>
